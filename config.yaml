@@ -1,0 +1,21 @@
+name: SleeveNotes
+version: "1.11.0"
+slug: sleevenotes
+description: >-
+  Single-page vinyl record tracker with deep Discogs integration, wishlist,
+  collection sync, offline PWA support and CSV import/export.
+url: https://github.com/SiDtheTurtle/SleeveNotes
+arch:
+  - amd64
+  - aarch64
+init: true
+startup: services
+boot: auto
+webui: "http://[HOST]:[PORT:2026]"
+ingress: false
+ports:
+  2026/tcp: 2026
+ports_description:
+  2026/tcp: SleeveNotes web interface
+hassio_api: false
+homeassistant_api: false
